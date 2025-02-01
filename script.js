@@ -44,13 +44,13 @@ send_button.addEventListener("click",function(){
         createMessage("stupid Nigga write something.",container,"ai_response")
     }
     
-    else if (prompt=="who is sigma male?"){
+    else if (prompt=="Who is sigma male?"){
         createMessage("Bishwas Ghimire is the ultimate sigma!",container,"ai_response")
     }
-    else if(prompt=="who is the NPC of the century?"){
+    else if(prompt=="Who is the NPC of the century?"){
         createMessage("Ashis Joshi is the  Npc of the century!",container,"ai_response")
     }
-    else if(prompt=="which is the worse school in the world?"){
+    else if(prompt=="Which is the worse school in the world?"){
         createMessage("Viswa Niketan",container,"ai_response")
     }
     else{
