@@ -1,0 +1,165 @@
+body {
+    background-color: 1D267D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+
+#chat_box {
+    width: 98%;
+    min-width: 200px;
+    height: 80vh;
+    max-height: 700px;
+    background-color: 1D267D;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border: solidrgb(247, 246, 249);
+    padding: 1rem;
+    overflow-y: auto;  /* Enables vertical scrolling */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    scrollbar-width: thin;  /* Firefox scrollbar */
+    scrollbar-color: gray transparent; /* Custom scrollbar colors */
+}
+
+
+#chat_box::-webkit-scrollbar {
+    width: 8px;
+}
+
+#chat_box::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#chat_box::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 5px;
+}
+
+#chat_box::-webkit-scrollbar-thumb:hover {
+    background: darkgray;
+}
+
+
+#chat_box h3 {
+    color: black;
+    font-size: clamp(16px, 2vw, 32px);
+    text-align: center;
+}
+
+#prompt_container {
+    display: flex;
+    width: 98%;
+    height: 12%;
+    background-color: 1D267D;
+    align-items: center;
+    padding: 0.5rem;
+    gap: 10px;
+}
+
+#prompt_box {
+    flex-grow: 1;
+    height: 100%;
+    background-color: rgb(23, 28, 73);
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    font-size: clamp(20px, 1.5vw, 24px);
+    padding: 10px;
+    color: white;
+}
+
+
+#send_button {
+    font-family: 'Minecraft';
+    color: white;
+    width: 10%;
+    min-width: 60px;
+    height: 100%;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(20px, 1.2vw, 20px);
+    border: none;
+    cursor: pointer;
+    background-color: rgb(23, 28, 73);
+    transition: background-color 0.3s ease;
+}
+
+#send_button:hover {
+    background-color: rgba(22, 7, 79, 0.445);
+}
+
+
+#ai_response {
+    margin-top: 0.2vw;
+    width: min(900px, 70%);
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border-radius: 30px;
+    padding: 1%;
+
+}
+
+
+#ai_response img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+#ai_response p {
+    background-color: rgb(57, 165, 242);
+    padding: 3%;
+    border-radius: 20px;
+    font-size: clamp(12px, 1.5vw, 24px);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+#user_prompt {
+    margin-left: auto;
+    margin-right: 0%;
+    width: min(900px, 70%);
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+
+#user_prompt img {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+
+#user_prompt p {
+    background-color: rgb(63, 242, 57);
+    padding: 3%;
+    border-radius: 20px;
+    font-size: clamp(12px, 1.5vw, 24px);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
