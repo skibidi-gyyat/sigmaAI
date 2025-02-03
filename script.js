@@ -54,10 +54,10 @@ send_button.addEventListener("click", function () {
         createMessage("Stupid Ass Nigga write something!", container, "ai_response");
     }
     else if(prompt=="Who is sigma male?"){
-        createMessage("Bishwas Ghimare is sigma male.", container, "ai_response");
+        createMessage("Bishwas Ghimire is sigma male.", container, "ai_response");
     }
     else if(prompt=="sigma male" || prompt=="Sigma male"){
-       createMessage("You mean Bishwas Ghimare, right?", container, "ai_response"); 
+       createMessage("You mean Bishwas Ghimire, right?", container, "ai_response"); 
     }
     else {
         getResponse(prompt, container);
