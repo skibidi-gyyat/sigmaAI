@@ -39,7 +39,7 @@ prompt_field.addEventListener("keydown", function(e){
     if(e.key=="Enter"){
         send_button.click();
     }
-}
+})
 
 send_button.addEventListener("click",function(){
     let prompt=prompt_field.value.trim();
@@ -52,7 +52,6 @@ send_button.addEventListener("click",function(){
     
     else if (prompt=="Who is sigma male?"){
         createMessage("Bishwas Ghimire is the ultimate sigma male!",container,"ai_response")
-    }
     }
     else{
         getResponse(prompt,container)}
