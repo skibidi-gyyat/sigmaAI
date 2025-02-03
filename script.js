@@ -35,6 +35,12 @@ const container=document.querySelector("#chat_box");
 
 let ai_chat=""
 
+prompt_field.addEventListener("keydown", function(e){
+    if(e.key=="Enter"){
+        send_button.click();
+    }
+}
+
 send_button.addEventListener("click",function(){
     let prompt=prompt_field.value.trim();
     prompt_field.value='';
@@ -45,13 +51,8 @@ send_button.addEventListener("click",function(){
     }
     
     else if (prompt=="Who is sigma male?"){
-        createMessage("Bishwas Ghimire is the ultimate sigma!",container,"ai_response")
+        createMessage("Bishwas Ghimire is the ultimate sigma male!",container,"ai_response")
     }
-    else if(prompt=="Who is the NPC of the century?"){
-        createMessage("Ashis Joshi is the  Npc of the century!",container,"ai_response")
-    }
-    else if(prompt=="Which is the worse school in the world?"){
-        createMessage("Viswa Niketan",container,"ai_response")
     }
     else{
         getResponse(prompt,container)}
