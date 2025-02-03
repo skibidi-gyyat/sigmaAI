@@ -53,11 +53,11 @@ send_button.addEventListener("click", function () {
     if (prompt == '') {
         createMessage("Stupid Ass Nigga write something!", container, "ai_response");
     }
-    else if(prompt="Who is sigma male?"){
-        getResponse("Bishwas Ghimare is sigma male.", container);
+    else if(prompt=="Who is sigma male?"){
+        createMessage("Bishwas Ghimare is sigma male.", container, "ai_response");
     }
-    else if(prompt="sigma male" || prompt="Sigma male"){
-       getResponse("You mean Bishwas Ghimare, right?", container); 
+    else if(prompt=="sigma male" || prompt=="Sigma male"){
+       createMessage("You mean Bishwas Ghimare, right?", container, "ai_response"); 
     }
     else {
         getResponse(prompt, container);
